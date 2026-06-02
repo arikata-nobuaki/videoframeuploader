@@ -1,6 +1,6 @@
 {
   "name": "@arikata-nobuaki/videoframeuploader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zero-copy video textures for Three.js WebGPU via importExternalTexture",
   "license": "MIT",
   "author": "Nobuaki Arikata",
