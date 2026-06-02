@@ -128,8 +128,6 @@ npm run preview:demo:videotexture
 npm run preview:demo:videoframetexture
 ```
 
-See [examples/README.md](./examples/README.md) for details.
-
 ## Project layout
 
 ```
