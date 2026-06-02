@@ -1,0 +1,45 @@
+{
+  "name": "@arikata-nobuaki/videoframeuploader",
+  "version": "0.1.0",
+  "description": "Zero-copy video textures for Three.js WebGPU via importExternalTexture",
+  "license": "MIT",
+  "author": "Nobuaki Arikata",
+  "type": "module",
+  "sideEffects": false,
+  "keywords": [
+    "webgpu",
+    "three.js",
+    "video",
+    "videoframe",
+    "texture",
+    "importExternalTexture"
+  ],
+  "files": [
+    "dist/videoframeuploader.js",
+    "dist/videoframeuploader.js.map",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "npm run build",
+    "preview:demo:minimal": "vite build && npx vite examples/minimal",
+    "preview:demo:videotexture": "vite build && npx vite examples/videotexture",
+    "preview:demo:videoframetexture": "vite build && npx vite examples/videoframetexture"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/videoframeuploader.js"
+    }
+  },
+  "peerDependencies": {
+    "three": ">=0.184.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "terser": "^5.48.0",
+    "three": "^0.184.0",
+    "vite": "^8.0.12"
+  }
+}
